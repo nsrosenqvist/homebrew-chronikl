@@ -2,25 +2,25 @@ class Chronikl < Formula
   desc "AI-powered release notes generator"
   homepage "https://chronikl.dev"
   license "BUSL-1.1"
-  version "1.2.1" # updated automatically by CI
+  version "1.3.0" # updated automatically by CI
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/nsrosenqvist/chronikl/releases/download/v#{version}/chronikl-aarch64-apple-darwin.tar.gz"
-      sha256 "75f61bc2fb01536dd6b08b1cbe458e6fb5971a60c007e97b2fdff35e9fd0d009" # updated automatically by CI
+      sha256 "037c880dd1f75f9a3ee5147bb8a4da86b04f3a7f99305e4d1f3dc0f3ca2c678f" # updated automatically by CI
     elsif Hardware::CPU.intel?
       url "https://github.com/nsrosenqvist/chronikl/releases/download/v#{version}/chronikl-x86_64-apple-darwin.tar.gz"
-      sha256 "0b29fcd21a455c3a9ddeab97803383173a6fe70d1c1ecfb731eed28da6a1b845"
+      sha256 "b63b735931d2ea822f28066c5d77d3b73241f990ad9e18444effb64b7d2b97d6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/nsrosenqvist/chronikl/releases/download/v#{version}/chronikl-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3b50693a07401de8243779447a901cb14641d7e18b69e774f7ff1618f5f14809"
+      sha256 "fe47c2d55272c1e6be10dd810afbce97c6a15c1ee18d53ae0903cf8d7baee611"
     elsif Hardware::CPU.intel?
       url "https://github.com/nsrosenqvist/chronikl/releases/download/v#{version}/chronikl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "968e7f4564e20b764f3a499dc96b4de498146ef3145665d91349fd4571a15068"
+      sha256 "df0e576c1871da993630c8d7500fb895fb9ce8f9cc69dbbd18ce6f4434471c22"
     end
   end
 
